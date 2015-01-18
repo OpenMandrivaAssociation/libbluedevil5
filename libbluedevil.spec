@@ -12,6 +12,8 @@ License:	LGPLv2+
 Url:		https://projects.kde.org/projects/playground/libs/libname
 Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/plasma/%{version}/libbluedevil-%{version}.tar.xz
 BuildRequires:	cmake
+BuildRequires:	bluez-devel
+BuildRequires:	ninja
 BuildRequires:	extra-cmake-modules5
 
 %description
