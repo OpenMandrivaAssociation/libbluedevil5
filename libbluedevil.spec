@@ -49,10 +49,10 @@ ninja -C build
 DESTDIR="%{buildroot}" ninja install -C build
 
 %files -n %{libname}
-%{_kde_libdir}/libbluedevil.so.%{major}*
+%{_libdir}/libbluedevil.so.%{major}*
 
 %files -n %{devname}
-%{_kde_includedir}/bluedevil
-%{_kde_libdir}/libbluedevil.so
-%{_kde_libdir}/pkgconfig/bluedevil.pc
+%{_includedir}/bluedevil
+%{_libdir}/libbluedevil.so
+%{_libdir}/pkgconfig/bluedevil.pc
 
