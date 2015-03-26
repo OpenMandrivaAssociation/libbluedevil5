@@ -6,7 +6,7 @@
 Summary:	Qt-based library written in C++ to handle all Bluetooth functionality
 Name:		libbluedevil5
 Group:		Graphical desktop/KDE
-Version:	5.2.1
+Version:	5.2.2
 Release:	1
 License:	LGPLv2+
 Url:		https://projects.kde.org/projects/playground/libs/libname
@@ -15,16 +15,18 @@ BuildRequires:	cmake
 BuildRequires:	bluez-devel
 BuildRequires:	ninja
 BuildRequires:	extra-cmake-modules5
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5DBus)
 
 %description
-Qt-based library written in C++ to handle all Bluetooth functionality
+Qt-based library written in C++ to handle all Bluetooth functionality.
 
 %package -n %{libname}
 Summary:	Bluedevil Runtime library
 Group:		System/Libraries
 
 %description -n %{libname}
-Qt-based library written in C++ to handle all Bluetooth functionality
+Qt-based library written in C++ to handle all Bluetooth functionality.
 
 %package -n %{devname}
 Summary:	Devel stuff for %{name}
